@@ -1,14 +1,14 @@
-#Azure Terraform Lab
+# Azure Terraform Lab
 
-    ##Description 
+    ## Description 
 
         Azure environment with 2 regions 
         GCP to come
 
-    ##TFVARS 
+    ## TFVARS 
         Use tfvars file for sensitive information 
 
-##Environment Topology 
+## Environment Topology 
 
     To be added.
 
