@@ -3,7 +3,7 @@
 ## Description 
 
         Azure environment with 2 regions 
-        GCP to come
+        NON-HPE deployment
 
 ## TFVARS 
         Use tfvars file for sensitive information 
