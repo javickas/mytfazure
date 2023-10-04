@@ -29,10 +29,81 @@ variable "subscription_id" {
 
 }
 
+variable  "awsaccount" {
+  type = string
+}
+
 # variable "gcpaccount" {
 #   type = string
 
 # }
+
+
+#aws-regions
+variable "aws-east1" {
+    default = "us-east-1" 
+}
+variable "aws-east2" {
+  default = "us-east-2"
+}
+variable "aws-west1" {
+  default = "us-west-1"
+}
+variable "aws_west2" {
+  default = "us-west-2"
+}
+variable "aws_eu_west1" {
+  default = "eu-west-1"
+}
+
+###AWS - Networking###
+
+variable "transit-east2-cidr" {
+    default = "10.255.200.0/23" 
+}
+
+ variable "transit-east1-cidr" {
+     default = "10.255.202.0/23"
+ }
+
+variable "transit-west1-cidr" {
+     default = "10.255.210.0/23"
+}
+
+
+ #spoke gateway Cidr addresses 
+
+ variable "spoke-east1-cidr" {
+     default = "10.100.0.0/23"
+  
+ }
+ variable "spoke-east2-cidr" {
+     default = "10.101.2.0/23"
+  
+ } 
+ 
+ variable "spoke-east3-cidr" {
+     default = "10.102.4.0/23"
+  
+ }
+#Spoke GW Cidr us-east2
+
+ variable "spoke-use2a-cidr" {
+     default = "10.110.0.0/23"
+  
+ }
+ variable "spoke-use2b-cidr" {
+     default = "10.111.2.0/23"
+  
+ } 
+ 
+ variable "spoke-use2c-cidr" {
+     default = "10.112.4.0/23"
+  
+ }
+
+
+
 
 
 #################################
@@ -231,7 +302,7 @@ variable "azure_spk1_e6_name" {
 ##Azure resource group##
 
 variable "rg" {
-  default = "TF-RG"
+  default = "jg-sentinel-23"
 
 }
 
@@ -251,4 +322,18 @@ variable "azure_vm_large_instance" {
   default = "Standard_D5_v2"
 }
 
+variable "hpe" {
+  default = "c5n.4xlarge"
+  
+}
 
+
+
+variable "use1-web1" {
+    default = "ami-052c4c69d742a9b23"
+  
+}
+variable "use1-key" {
+  default = "CtlrKP"
+  
+}
